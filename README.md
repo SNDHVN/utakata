@@ -1,7 +1,7 @@
 # Tidslinje
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
-[![Vibe Coded](https://img.shields.io/badge/✨-vibe_coded-blueviolet)]
+[![Vibe Coded](https://img.shields.io/badge/✨-vibe_coded-blueviolet)]()
 
 A dark, minimal Ghost theme built around a timeline layout. No external dependencies, no tracking.
 
@@ -17,7 +17,7 @@ A dark, minimal Ghost theme built around a timeline layout. No external dependen
 - Three font families (Serif, Sans-serif, Monospaced) with adjustable size
 - Micro posts for short-form content
 - Minimal JS (related posts, scroll animations), no third-party requests
-- Swedish localization
+- Swedish and German localization
 
 ## Setup
 
@@ -67,7 +67,7 @@ Tag a post with `#micro` to turn it into a short-form entry — no title, no "Re
 
 ### Localization
 
-Set your Ghost publication language (`Settings > General > Publication Language`). Swedish translations are in `locales/sv.json`.
+Set your Ghost publication language (`Settings > General > Publication Language`). Swedish translations are in `locales/sv.json`, German translations are in `locales/de.json`.
 
 ## CSS Overrides
 
