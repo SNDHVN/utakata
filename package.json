@@ -132,6 +132,10 @@
         ],
         "default": "Default"
       },
+      "timeline_icons": {
+        "type": "boolean",
+        "default": true
+      },
       "post_header_show_author": {
         "type": "boolean",
         "default": true

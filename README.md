@@ -1,11 +1,9 @@
 # Tidslinje
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
-[![Vibe Coded](https://img.shields.io/badge/✨-vibe_coded-blueviolet)](https://github.com/klppl/tidslinje)
+[![Vibe Coded](https://img.shields.io/badge/✨-vibe_coded-blueviolet)]
 
 A dark, minimal Ghost theme built around a timeline layout. No external dependencies, no tracking.
-
-<img src="screenshot.png" width="500">
 
 > [!CAUTION]
 > **Vibe Disclaimer**: This theme was 100% vibe-coded in collaboration between a human architect and an agentic AI.

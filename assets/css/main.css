@@ -432,6 +432,11 @@ pre {
   opacity: 0.9;
 }
 
+/* MODIFIER: Icons disabled */
+.no-timeline-icons .timeline-icon {
+  display: none;
+}
+
 .timeline-right {
   flex: 1;
   padding-left: 1rem;
