@@ -1,32 +1,59 @@
-# Tidslinje Theme Documentation
+# UTAKATA Theme Documentation
 
-Tidslinje is a dark, timeline-based Ghost theme built for bloggers who want a clean, chronological layout. Every post appears on a vertical timeline with dates, icons, and excerpts.
+UTAKATA is a dark, timeline-based Ghost theme built for bloggers who want a clean, chronological layout based on [Tidslinje](https://github.com/klppl/tidslinje) by [klppl](https://github.com/klppl).. Every post appears on a vertical timeline with dates, icons, and excerpts.
 
 ---
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-- [Color Palettes](#color-palettes)
-- [Typography](#typography)
-- [Layout](#layout)
-- [Navigation](#navigation)
-- [Timeline](#timeline)
-- [Timeline Icons](#timeline-icons)
-- [Post Types](#post-types)
-- [Post Display Options](#post-display-options)
-- [Custom Page Templates](#custom-page-templates)
-- [Membership & Subscribe](#membership--subscribe)
-- [Welcome Mat](#welcome-mat)
-- [Related Posts](#related-posts)
-- [Localization](#localization)
-- [Mobile Behavior](#mobile-behavior)
+- [UTAKATA Theme Documentation](#utakata-theme-documentation)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Color Palettes](#color-palettes)
+  - [Typography](#typography)
+    - [Font Family](#font-family)
+    - [Body Font Size](#body-font-size)
+  - [Layout](#layout)
+    - [Container Width](#container-width)
+    - [Site Icon Framing](#site-icon-framing)
+  - [Navigation](#navigation)
+    - [Navigation Style](#navigation-style)
+    - [Navigation Size](#navigation-size)
+    - [Sticky Navigation](#sticky-navigation)
+  - [Timeline](#timeline)
+    - [Timeline Density](#timeline-density)
+    - [Timeline Icon Position](#timeline-icon-position)
+    - [Timeline Icon Style](#timeline-icon-style)
+  - [Timeline Icons](#timeline-icons)
+    - [How to set an icon for a post](#how-to-set-an-icon-for-a-post)
+    - [Examples](#examples)
+  - [Post Types](#post-types)
+    - [Regular Posts](#regular-posts)
+    - [Micro Posts](#micro-posts)
+    - [Featured Posts](#featured-posts)
+  - [Post Display Options](#post-display-options)
+    - [Post Header](#post-header)
+    - [Post Footer](#post-footer)
+  - [Custom Page Templates](#custom-page-templates)
+    - [Full Width](#full-width)
+    - [No Feature Image](#no-feature-image)
+    - [Subscribe](#subscribe)
+    - [Project Case Study](#project-case-study)
+    - [Video](#video)
+    - [Curated List](#curated-list)
+  - [Membership \& Subscribe](#membership--subscribe)
+  - [Welcome Mat](#welcome-mat)
+    - [How to enable](#how-to-enable)
+  - [Related Posts](#related-posts)
+    - [Settings](#settings)
+  - [Localization](#localization)
+  - [Mobile Behavior](#mobile-behavior)
 
 ---
 
 ## Getting Started
 
-Upload `tidslinje.zip` via **Ghost Admin > Settings > Design > Change theme**. All settings below are found in **Ghost Admin > Design > Site design**.
+Upload `utakata.zip` via **Ghost Admin > Settings > Design > Change theme**. All settings below are found in **Ghost Admin > Design > Site design**.
 
 **Requirements**: Ghost >= 5.0.0
 
@@ -167,7 +194,7 @@ Controls where timeline icons appear relative to the content.
 | **Standard** | Icons centered between dates and post content |
 | **Left** | Icons on the far left, dates shift inward |
 | **Right** | Icons on the far right of the timeline |
-| **None** | Icons and the vertical timeline line are both hidden |
+| **None** | Small dot instead of icons |
 
 **Setting**: Design > Timeline icon position
 

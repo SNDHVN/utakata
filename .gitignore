@@ -10,7 +10,7 @@ yarn-error.log*
 
 # Ghost/Theme
 *.zip
-!tidslinje.zip # Keep this if it was deliberate, but usually artifacts are ignored.
+!utakata.zip # Keep this if it was deliberate, but usually artifacts are ignored.
 # Actually, standard practice is to ignore all .zips. I will ignore all.
 *.zip
 

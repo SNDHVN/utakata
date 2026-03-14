@@ -1,9 +1,9 @@
-# Tidslinje
+# Utakata
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
 [![Vibe Coded](https://img.shields.io/badge/✨-vibe_coded-blueviolet)]()
 
-A dark, minimal Ghost theme built around a timeline layout. No external dependencies, no tracking.
+A dark, minimal Ghost theme built around a timeline layout. No external dependencies, no tracking. 
 
 > [!CAUTION]
 > **Vibe Disclaimer**: This theme was 100% vibe-coded in collaboration between a human architect and an agentic AI.
@@ -29,7 +29,7 @@ Package and upload:
 npm run zip
 ```
 
-Upload `tidslinje.zip` via **Ghost Admin > Settings > Design > Change theme**.
+Upload `utakata.zip` via **Ghost Admin > Settings > Design > Change theme**.
 
 ### Configuration
 
@@ -88,6 +88,9 @@ Override any theme variable via **Code Injection**:
   }
 </style>
 ```
+## Credits
+
+Based on [Tidslinje](https://github.com/klppl/tidslinje) by [klppl](https://github.com/klppl).
 
 ## License
 
