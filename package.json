@@ -1,18 +1,18 @@
 {
-  "name": "tidslinje",
-  "description": "Tidslinje: A minimalist, timeline-focused Ghost theme for chronicling your existence before the inevitable heat death of the universe.",
-  "demo": "https://github.com/klppl",
-  "version": "1.0.5",
+  "name": "utakata",
+  "description": "Utakata: A minimalist, timeline-focused Ghost theme for chronicling your existence before the inevitable heat death of the universe.",
+  "demo": "",
+  "version": "0.1.0",
   "engines": {
     "ghost": ">=5.0.0"
   },
   "scripts": {
-    "zip": "zip -r tidslinje.zip . -x '*.git*' -x 'node_modules/*' -x '.DS_Store' -x '.antigravity/*' -x '*.zip'"
+    "zip": "zip -r utakata.zip . -x '*.git*' -x 'node_modules/*' -x '.DS_Store' -x '.antigravity/*' -x '*.zip'"
   },
   "author": {
-    "name": "alexander",
-    "email": "hej@klippel.se",
-    "url": "https://github.com/klppl"
+    "name": "Tim",
+    "email": "tim@sndhvn.com",
+    "url": "https://github.com/SNDHVN"
   },
   "config": {
     "posts_per_page": 20,
@@ -200,6 +200,7 @@
   },
   "keywords": [
     "tidslinje",
+    "utakata",
     "timeline",
     "minimalist",
     "nihilism",
@@ -208,7 +209,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/klppl/tidslinje.git"
+    "url": "https://github.com/SNDHVN/utakata.git"
   },
   "license": "GPL-3.0"
 }
