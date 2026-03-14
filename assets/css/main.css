@@ -432,9 +432,19 @@ pre {
   opacity: 0.9;
 }
 
-/* MODIFIER: Icons disabled */
+/* MODIFIER: Icons disabled — hide emoji, show dot on the line */
 .no-timeline-icons .timeline-icon {
   display: none;
+}
+
+.no-timeline-icons .timeline-marker::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--timeline-line-color);
+  margin-top: 0.35em;
 }
 
 .timeline-right {
