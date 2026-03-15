@@ -2,7 +2,7 @@
   "name": "utakata",
   "description": "Utakata: A minimalist, timeline-focused Ghost theme for chronicling your existence before the inevitable heat death of the universe.",
   "demo": "",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "ghost": ">=5.0.0"
   },
