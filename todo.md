@@ -60,7 +60,7 @@
 
 - [x] **`post.hbs` passes unused hash params to related-posts** — `post.hbs:61`. The `{{> related-posts reltags=post.tags exclude=post.id}}` partial call passes `reltags` and `exclude` but the partial never reads these — it extracts tags and ID from its own Handlebars context. Dead parameters that are confusing to maintain.
 
-- [ ] **Microposts missing functional URL links** — `loop.hbs`. Micro posts (`#has tag="#micro"`) have issues with URL links that need to be fixed to correctly support microformats requirements.
+- [o] **Microposts missing functional URL links** — `loop.hbs`. Micro posts (`#has tag="#micro"`) have issues with URL links that need to be fixed to correctly support microformats requirements.
 
 ## Nice to Have
 
@@ -82,7 +82,7 @@
 
 - [x] **Sticky Navigation** — Nav sticks to top on scroll with `position: sticky`, using `--bg-color` background so content scrolls behind it.
 
-- [ ] **Scroll Progress** — Implement a discrete reading progress bar at the top of the page.
+- [o] **Scroll Progress** — Implement a discrete reading progress bar at the top of the page.
 
 - [ ] **Add keyboard focus styles** — No `:focus` or `:focus-visible` rules exist anywhere in `main.css`. Keyboard navigation is completely invisible, which is a WCAG 2.4.7 failure. Add visible focus indicators for links, buttons, and form inputs.
 
@@ -124,9 +124,9 @@
 
 - [x] **Remove dead `post-teaser.hbs` partial** — `partials/post-teaser.hbs` is never referenced by any template, has no corresponding CSS, and contains broken HTML (unclosed `<span>`). It appears to be leftover from a previous card-based layout.
 
-- [ ] **Add reading time to posts** — `post.hbs` does not display `{{reading_time}}`. This is a common expectation for blog themes and Ghost provides the helper natively.
+- [o] **Add reading time to posts** — `post.hbs` does not display `{{reading_time}}`. This is a common expectation for blog themes and Ghost provides the helper natively.
 
-- [ ] **Add previous/next post navigation** — `post.hbs` has no prev/next links at the bottom. Ghost provides `{{prev_post}}` and `{{next_post}}` block helpers for this.
+- [o] **Add previous/next post navigation** — `post.hbs` has no prev/next links at the bottom. Ghost provides `{{prev_post}}` and `{{next_post}}` block helpers for this.
 
 - [x] **Update README** — `README.md` claims "No JavaScript" and "Zero JS by default" but the theme now has `related-posts.js` and an inline IntersectionObserver script. The color palette table only lists 2 palettes but 6 are shipped.
 

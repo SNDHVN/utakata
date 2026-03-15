@@ -1,0 +1,15 @@
+{{!-- Previous / Next post navigation --}}
+<nav class="post-nav">
+  {{#prev_post}}
+  <a href="{{url}}" class="post-nav__link post-nav__link--prev">
+    <span class="post-nav__label">{{t "Previous"}}</span>
+    <span class="post-nav__title">{{title}}</span>
+  </a>
+  {{/prev_post}}
+  {{#next_post}}
+  <a href="{{url}}" class="post-nav__link post-nav__link--next">
+    <span class="post-nav__label">{{t "Next"}}</span>
+    <span class="post-nav__title">{{title}}</span>
+  </a>
+  {{/next_post}}
+</nav>

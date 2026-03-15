@@ -25,6 +25,9 @@
   }}icon-position-left{{else match @custom.timeline_icon_position "Right" }}icon-position-right{{else match
   @custom.timeline_icon_position "None" }}icon-position-none{{/match}} {{#match @custom.color_palette "Dracula"}}palette-dracula{{else match @custom.color_palette "Catppuccin"}}palette-catppuccin{{else match @custom.color_palette "Nordic Forest"}}palette-nordic{{else match @custom.color_palette "Warm Earth"}}palette-earth{{else match @custom.color_palette "Cyberpunk"}}palette-cyberpunk{{else match @custom.color_palette "Night Owl"}}palette-nightowl{{else match @custom.color_palette "Nord"}}palette-nord{{else match @custom.color_palette "Solarized"}}palette-solarized{{else match @custom.color_palette "Gruvbox"}}palette-gruvbox{{/match}} {{#match @custom.sticky_navigation}}nav-sticky{{/match}} {{#match @custom.timeline_icon_style "Monochrome"}}icon-style-mono{{else match @custom.timeline_icon_style "Contrast"}}icon-style-contrast{{/match}} {{#unless @custom.timeline_icons}}no-timeline-icons{{/unless}}" id="body">
 
+  {{!-- Reading progress bar --}}
+  <div id="reading-progress" aria-hidden="true"></div>
+
   {{!-- View: Template body injection --}}
   {{{body}}}
 
@@ -145,6 +148,27 @@
           a.parentElement.classList.remove('nav-current');
         }
       });
+    })();
+  </script>
+
+  {{!-- Reading progress bar --}}
+  <script>
+    (function () {
+      var bar = document.getElementById('reading-progress');
+      var content = document.querySelector('.post__content');
+      if (!bar || !content) return;
+
+      bar.classList.add('reading-progress--active');
+
+      function update() {
+        var rect = content.getBoundingClientRect();
+        var total = rect.height - window.innerHeight;
+        var progress = total > 0 ? Math.min(1, Math.max(0, -rect.top / total)) : 0;
+        bar.style.transform = 'scaleX(' + progress + ')';
+      }
+
+      window.addEventListener('scroll', update, { passive: true });
+      update();
     })();
   </script>
 
