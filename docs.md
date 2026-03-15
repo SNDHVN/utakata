@@ -15,6 +15,7 @@ UTAKATA is a dark, timeline-based Ghost theme built for bloggers who want a clea
     - [Body Font Size](#body-font-size)
   - [Layout](#layout)
     - [Container Width](#container-width)
+    - [Show Site Icon](#show-site-icon)
     - [Site Icon Framing](#site-icon-framing)
   - [Navigation](#navigation)
     - [Navigation Style](#navigation-style)
@@ -44,6 +45,7 @@ UTAKATA is a dark, timeline-based Ghost theme built for bloggers who want a clea
   - [Membership \& Subscribe](#membership--subscribe)
   - [Welcome Mat](#welcome-mat)
     - [How to enable](#how-to-enable)
+  - [Reading Progress Bar](#reading-progress-bar)
   - [Related Posts](#related-posts)
     - [Settings](#settings)
   - [Localization](#localization)
@@ -122,6 +124,15 @@ Controls the maximum width of the site content area.
 
 **Setting**: Design > Container width
 
+### Show Site Icon
+
+Controls whether the publication icon appears in the header. When disabled, only the site title and description are shown.
+
+- **On** (default) — icon appears above the site title
+- **Off** — icon is hidden
+
+**Setting**: Design > Show site icon
+
 ### Site Icon Framing
 
 Controls the border radius of the site icon in the header.
@@ -156,7 +167,16 @@ Six visual styles for the main navigation links.
 
 ### Navigation Size
 
-Controls the font size of navigation links. Options range from `0.75rem` to `1.75rem` in increments.
+Controls the font size of navigation links.
+
+| Option | Size |
+|--------|------|
+| Extra Small | 0.75rem |
+| Small | 0.875rem |
+| Medium | 1rem (default) |
+| Large | 1.25rem |
+| Extra Large | 1.5rem |
+| 2X Large | 1.75rem |
 
 **Setting**: Design > Navigation size
 
@@ -261,8 +281,8 @@ Short-form posts (status updates, quick thoughts) without titles. To create a mi
 2. Assign the internal tag `#micro` to the post
 
 Micro posts display differently in the timeline:
-- No title — content is shown inline (50-word excerpt)
-- Permalink `#` symbol for direct linking
+- No title — full content is shown inline
+- Permalink `#` symbol for direct linking (outside the content for correct microformats parsing)
 - Slightly larger font size (1.2rem) for visual weight
 
 ### Featured Posts
@@ -282,6 +302,7 @@ These toggles control what metadata appears on individual post pages.
 | Show author | On | Author name below title |
 | Show date | On | Publication date below title |
 | Show tags | On | Tag list below title |
+| Show reading time | On | Reading time estimate below tags (e.g. "3 min read") |
 
 ### Post Footer
 
@@ -289,6 +310,8 @@ These toggles control what metadata appears on individual post pages.
 |---------|---------|----------|
 | Show author | On | Author bio section at end of post |
 | Show related | On | Related posts section at end of post |
+
+Previous and next post navigation links always appear at the top of the post footer, before the subscribe widget.
 
 **Settings**: Design > Post header / Post footer options
 
@@ -355,6 +378,16 @@ The welcome mat appears:
 To disable, clear the text field.
 
 **Setting**: Design > Welcome mat optin CTA
+
+---
+
+## Reading Progress Bar
+
+A thin 2px bar in the accent color appears fixed at the top of the viewport on post pages. It fills left-to-right as the reader scrolls through the post content, reaching 100% when the end of the article body is reached.
+
+It only activates on post pages; it does not appear on the homepage, tag pages, or author pages.
+
+**Setting**: Design > Show reading progress bar
 
 ---
 

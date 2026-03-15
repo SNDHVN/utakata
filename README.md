@@ -6,8 +6,8 @@
 A dark, minimal Ghost theme built around a timeline layout. No external dependencies, no tracking. 
 
 > [!CAUTION]
-> **Vibe Disclaimer**: This theme was 100% vibe-coded in collaboration between a human architect and an agentic AI.
-> Expect high-entropy logic, aesthetic-first architecture, and code that technically shouldn't work as well as it does. By using this, you accept that reality is subjective and that "it works on my machine" is a valid deployment strategy.
+> **Vibe Disclaimer**: The original Tidslinje was 100% vibe-coded in collaboration between a human architect and an agentic AI.
+> This fork, Utakata, takes it one step further — maintained by someone who is technically literate enough to be dangerous but has absolutely no idea what they're doing, and just wanted a nice theme for their personal blog. Code quality is best described as "enthusiastic". By using this, you accept that reality is subjective, that "it works on my machine" is a valid deployment strategy, and that aesthetic intent outweighs structural integrity.
 
 ## Features
 
@@ -16,6 +16,8 @@ A dark, minimal Ghost theme built around a timeline layout. No external dependen
 - Six navigation styles (Pill, Underline, Minimal, Brackets, Block, Cursor)
 - Three font families (Serif, Sans-serif, Monospaced) with adjustable size
 - Micro posts for short-form content
+- Previous/next post navigation at the bottom of each post
+- Reading progress bar on post pages
 - Minimal JS (related posts, scroll animations), no third-party requests
 - Swedish and German localization
 
@@ -47,11 +49,14 @@ All of these are in **Ghost Admin > Design**:
 | Font | Serif, Sans-serif, Monospaced |
 | Body font size | Small, Default, Large |
 | Container width | Narrow, Normal, Wide |
+| Show site icon | On / Off |
 | Icon framing | Round, Squircle, Rounded, Sharp |
 | Navigation style | Pill, Underline, Minimal, Brackets, Block, Cursor |
-| Navigation size | 0.75rem – 1.75rem |
+| Navigation size | Extra Small – 2X Large |
 | Timeline density | Compact, Comfortable, Spacious |
 | Timeline icon position | Standard, Left, Right, None |
+| Show reading time | On / Off |
+| Show reading progress bar | On / Off |
 
 Post display toggles (author, date, tags, related posts, excerpts) and a Welcome Mat opt-in CTA are also available.
 

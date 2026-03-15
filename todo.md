@@ -60,7 +60,7 @@
 
 - [x] **`post.hbs` passes unused hash params to related-posts** — `post.hbs:61`. The `{{> related-posts reltags=post.tags exclude=post.id}}` partial call passes `reltags` and `exclude` but the partial never reads these — it extracts tags and ID from its own Handlebars context. Dead parameters that are confusing to maintain.
 
-- [o] **Microposts missing functional URL links** — `loop.hbs`. Micro posts (`#has tag="#micro"`) have issues with URL links that need to be fixed to correctly support microformats requirements.
+- [ ] **Microposts missing functional URL links** — `loop.hbs`. Micro posts (`#has tag="#micro"`) have issues with URL links that need to be fixed to correctly support microformats requirements.
 
 ## Nice to Have
 
@@ -82,9 +82,9 @@
 
 - [x] **Sticky Navigation** — Nav sticks to top on scroll with `position: sticky`, using `--bg-color` background so content scrolls behind it.
 
-- [o] **Scroll Progress** — Implement a discrete reading progress bar at the top of the page.
+- [x] **Scroll Progress** — Implement a discrete reading progress bar at the top of the page.
 
-- [ ] **Add keyboard focus styles** — No `:focus` or `:focus-visible` rules exist anywhere in `main.css`. Keyboard navigation is completely invisible, which is a WCAG 2.4.7 failure. Add visible focus indicators for links, buttons, and form inputs.
+- [o] **Add keyboard focus styles** — No `:focus` or `:focus-visible` rules exist anywhere in `main.css`. Keyboard navigation is completely invisible, which is a WCAG 2.4.7 failure. Add visible focus indicators for links, buttons, and form inputs.
 
 - [ ] **Add skip-to-content link** — `default.hbs` has no skip link. Screen reader and keyboard users must tab through the entire navigation before reaching `<main id="content">`. Add a visually hidden skip link as the first focusable element.
 
@@ -94,11 +94,11 @@
 
 - [x] **Site title heading hierarchy** — `partials/main-header.hbs:13` renders the site title as `<h1>` on every page. On post, page, tag, and author templates, the content title is also an `<h1>`, producing two `<h1>` elements per page. The site title should be `<h1>` only on the home page and `<p>` or `<span>` elsewhere.
 
-- [ ] **Style Ghost content cards for dark theme** — `main.css` has no styles for Ghost's gallery (`.kg-gallery-*`), callout (`.kg-callout-*`), toggle (`.kg-toggle-*`), audio (`.kg-audio-*`), video (`.kg-video-*`), file (`.kg-file-*`), header (`.kg-header-*`), signup (`.kg-signup-*`), or product (`.kg-product-*`) cards. Ghost's default light-mode card CSS will clash with the dark theme.
+- [o] **Style Ghost content cards for dark theme** — `main.css` has no styles for Ghost's gallery (`.kg-gallery-*`), callout (`.kg-callout-*`), toggle (`.kg-toggle-*`), audio (`.kg-audio-*`), video (`.kg-video-*`), file (`.kg-file-*`), header (`.kg-header-*`), signup (`.kg-signup-*`), or product (`.kg-product-*`) cards. Ghost's default light-mode card CSS will clash with the dark theme.
 
-- [ ] **Tag feature image has no responsive srcset** — `tag.hbs:6`. Uses `{{tag.feature_image}}` directly, delivering the full-size image regardless of viewport. Should use `{{img_url tag.feature_image size="l"}}` with `srcset` for responsive loading.
+- [o] **Tag feature image has no responsive srcset** — `tag.hbs:6`. Uses `{{tag.feature_image}}` directly, delivering the full-size image regardless of viewport. Should use `{{img_url tag.feature_image size="l"}}` with `srcset` for responsive loading.
 
-- [ ] **Featured star needs `aria-hidden`** — `loop.hbs:42`. The `⭐` character in the featured indicator `<span>` has no `aria-hidden="true"`, so screen readers announce the unicode character. Should be marked as decorative.
+- [x] **Featured star needs `aria-hidden`** — `loop.hbs:42`. The `⭐` character in the featured indicator `<span>` has no `aria-hidden="true"`, so screen readers announce the unicode character. Should be marked as decorative.
 
 - [x] **Generic "Read more" link text** — `loop.hbs:49`. Every timeline entry's read-more link says `{{t "Read more"}}` with no post-specific context. Screen readers hear a list of identical "Read more" links. Add `aria-label="{{t 'Read more'}}: {{title}}"` for context.
 
@@ -116,7 +116,7 @@
 
 - [x] **Standardize timeline icon style** — The timeline icons are a mix of flat vector icons, gradient-shaded emoji, and simple outlines depending on what the author puts in the internal tag description. This inconsistency clashes with the minimalist aesthetic. Document a recommendation (or enforce via CSS) for a uniform monoline style — e.g. outline-only emoji, or a consistent icon set like Feather/Heroicons rendered in `var(--accent-color)` or `var(--text-muted)`.
 
-- [ ] **Human-readable `navigation_size` labels** — `package.json`. The navigation size options display raw CSS values (`"0.75rem"`, `"1.25rem"`, etc.) in Ghost Admin. Non-technical users won't understand these. Replace with labels like "Extra Small", "Small", "Medium", "Large", etc.
+- [o] **Human-readable `navigation_size` labels** — `package.json`. The navigation size options display raw CSS values (`"0.75rem"`, `"1.25rem"`, etc.) in Ghost Admin. Non-technical users won't understand these. Replace with labels like "Extra Small", "Small", "Medium", "Large", etc.
 
 - [x] **Add `"Read more"` key to `en.json`** — `locales/en.json` is missing the `"Read more"` key used in `loop.hbs`. It works by coincidence in English (Ghost falls back to the key itself), but it will break for any locale that does not define its own override.
 
@@ -126,7 +126,7 @@
 
 - [o] **Add reading time to posts** — `post.hbs` does not display `{{reading_time}}`. This is a common expectation for blog themes and Ghost provides the helper natively.
 
-- [o] **Add previous/next post navigation** — `post.hbs` has no prev/next links at the bottom. Ghost provides `{{prev_post}}` and `{{next_post}}` block helpers for this.
+- [x] **Add previous/next post navigation** — `post.hbs` has no prev/next links at the bottom. Ghost provides `{{prev_post}}` and `{{next_post}}` block helpers for this.
 
 - [x] **Update README** — `README.md` claims "No JavaScript" and "Zero JS by default" but the theme now has `related-posts.js` and an inline IntersectionObserver script. The color palette table only lists 2 palettes but 6 are shipped.
 
@@ -138,7 +138,7 @@
 
 - [x] **Theme Expansion** — Shipped: Default, Dracula, Catppuccin (Mocha), Nordic Forest, Warm Earth, Cyberpunk.
 
-- [ ] **Light mode support** — The theme is dark-only with no `prefers-color-scheme: light` handling. Users who prefer light mode get a dark theme regardless. Consider a light palette or a toggle, or at minimum a single light palette option in Ghost Admin.
+- [o] **Light mode support** — The theme is dark-only with no `prefers-color-scheme: light` handling. Users who prefer light mode get a dark theme regardless. Consider a light palette or a toggle, or at minimum a single light palette option in Ghost Admin.
 
 - [x] **Custom page templates** — Implemented 6 custom page templates selectable per-page in the Ghost editor: `custom-full-width.hbs` (immersive reader for visual/code-heavy content), `custom-no-feature-image.hbs` (essayist for pure text), `custom-subscribe.hbs` (distraction-free newsletter signup landing page), `custom-project-case.hbs` (portfolio/case study with structured metadata), `custom-video.hbs` (theater mode with cinema-style video breakout), `custom-curated-list.hbs` (grid layout for bookmark cards and resource lists). All registered in `package.json` and styled in `main.css`.
 

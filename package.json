@@ -160,6 +160,14 @@
         "type": "boolean",
         "default": true
       },
+      "post_show_reading_time": {
+        "type": "boolean",
+        "default": true
+      },
+      "show_reading_progress": {
+        "type": "boolean",
+        "default": true
+      },
       "related_posts_show_excerpt": {
         "type": "boolean",
         "default": true,
