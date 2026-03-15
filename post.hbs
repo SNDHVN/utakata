@@ -34,7 +34,9 @@
           {{/if}}
           {{/match}}
 
-          {{#match @custom.post_show_reading_time}}
+          {{#match @custom.reading_indicators "Both"}}
+          <span class="post__reading-time">{{reading_time}}</span>
+          {{else match @custom.reading_indicators "Reading Time"}}
           <span class="post__reading-time">{{reading_time}}</span>
           {{/match}}
         </div>

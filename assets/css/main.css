@@ -1018,39 +1018,23 @@ iframe[src*="vimeo.com"] {
   opacity: 0.75;
 }
 
-.nav-style-underline a::after {
-  content: '';
-  position: absolute;
-  bottom: 2px;
-  left: 0.75rem;
-  right: 0.75rem;
-  height: 2px;
-  background-color: var(--accent-color);
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
 .nav-style-underline a:hover {
   color: var(--heading-color);
   opacity: 1;
-}
-
-.nav-style-underline a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent-color);
 }
 
 .nav-style-underline .nav-current a {
   color: var(--heading-color);
   font-weight: 600;
   opacity: 1;
-}
-
-.nav-style-underline .nav-current a::after {
-  transform: scaleX(1);
-  background-color: var(--heading-color);
-  transform-origin: bottom center;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent-color);
 }
 
 /* STYLE: Minimal */
@@ -1070,10 +1054,7 @@ iframe[src*="vimeo.com"] {
   opacity: 1;
   color: var(--heading-color);
   font-weight: 600;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-  text-decoration-color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 /* STYLE: Brackets */
@@ -1087,7 +1068,7 @@ iframe[src*="vimeo.com"] {
   display: inline-block;
   opacity: 0;
   transition: transform 0.2s ease, opacity 0.2s ease;
-  color: var(--text-muted);
+  color: var(--accent-color);
   font-weight: 300;
 }
 
@@ -2017,6 +1998,17 @@ body:has(.membership-widget--welcome-mat) {
   --heading-color: #fbf1c7;
   --border-color: #504945;
   --code-bg: #1d2021;
+}
+
+.palette-sakura {
+  --bg-color: #42364d;
+  --card-bg: #4e3f5a;
+  --text-color: #fbd7ec;
+  --text-muted: #f076b7;
+  --accent-color: #74c337;
+  --heading-color: #f0b1db;
+  --border-color: #5a4868;
+  --code-bg: #2d2438;
 }
 
 /* SECTION: Mobile Responsiveness */

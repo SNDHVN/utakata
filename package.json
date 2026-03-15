@@ -35,7 +35,8 @@
           "Night Owl",
           "Nord",
           "Solarized",
-          "Gruvbox"
+          "Gruvbox",
+          "Sakura"
         ],
         "default": "Default"
       },
@@ -160,18 +161,15 @@
         "type": "boolean",
         "default": true
       },
-      "post_show_reading_time": {
-        "type": "boolean",
-        "default": true
-      },
-      "show_reading_progress": {
-        "type": "boolean",
-        "default": true
-      },
-      "related_posts_show_excerpt": {
-        "type": "boolean",
-        "default": true,
-        "description": "Show excerpt text in related posts cards"
+      "reading_indicators": {
+        "type": "select",
+        "options": [
+          "Both",
+          "Reading Time",
+          "Progress Bar",
+          "None"
+        ],
+        "default": "Both"
       },
       "welcome_mat_optin_cta": {
         "type": "text",

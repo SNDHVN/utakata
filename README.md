@@ -12,7 +12,7 @@ A dark, minimal Ghost theme built around a timeline layout. No external dependen
 ## Features
 
 - Timeline-based post listing with configurable density and icon positions
-- Multiple color palettes (Default, Dracula, Catppuccin, Nordic Forest, Warm Earth, Cyberpunk)
+- Multiple color palettes (Default, Dracula, Catppuccin, Nordic Forest, Warm Earth, Cyberpunk, Sakura)
 - Six navigation styles (Pill, Underline, Minimal, Brackets, Block, Cursor)
 - Three font families (Serif, Sans-serif, Monospaced) with adjustable size
 - Micro posts for short-form content
@@ -55,8 +55,7 @@ All of these are in **Ghost Admin > Design**:
 | Navigation size | Extra Small – 2X Large |
 | Timeline density | Compact, Comfortable, Spacious |
 | Timeline icon position | Standard, Left, Right, None |
-| Show reading time | On / Off |
-| Show reading progress bar | On / Off |
+| Reading indicators | Both / Reading Time / Progress Bar / None |
 
 Post display toggles (author, date, tags, related posts, excerpts) and a Welcome Mat opt-in CTA are also available.
 

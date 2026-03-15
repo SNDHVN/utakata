@@ -45,7 +45,7 @@ UTAKATA is a dark, timeline-based Ghost theme built for bloggers who want a clea
   - [Membership \& Subscribe](#membership--subscribe)
   - [Welcome Mat](#welcome-mat)
     - [How to enable](#how-to-enable)
-  - [Reading Progress Bar](#reading-progress-bar)
+  - [Reading Indicators](#reading-indicators)
   - [Related Posts](#related-posts)
     - [Settings](#settings)
   - [Localization](#localization)
@@ -63,7 +63,7 @@ Upload `utakata.zip` via **Ghost Admin > Settings > Design > Change theme**. All
 
 ## Color Palettes
 
-Six dark color palettes are available. Each palette sets backgrounds, text colors, accents, and the timeline line color.
+Dark color palettes are available. Each palette sets backgrounds, text colors, accents, and the timeline line color.
 
 | Palette | Background | Accent | Vibe |
 |---------|-----------|--------|------|
@@ -73,6 +73,7 @@ Six dark color palettes are available. Each palette sets backgrounds, text color
 | **Nordic Forest** | `#1a2421` | `#8fb573` (green) | Earthy, natural |
 | **Warm Earth** | `#231c17` | `#c67a4a` (orange) | Warm, grounded |
 | **Cyberpunk** | `#0d0d12` | `#ff2a6d` (pink) | Neon, high contrast |
+| **Sakura** | `#42364d` | `#74c337` (green) | Dark plum with sakura pinks |
 
 The timeline line automatically tints to 25% of the active palette's accent color.
 
@@ -302,7 +303,7 @@ These toggles control what metadata appears on individual post pages.
 | Show author | On | Author name below title |
 | Show date | On | Publication date below title |
 | Show tags | On | Tag list below title |
-| Show reading time | On | Reading time estimate below tags (e.g. "3 min read") |
+| Reading indicators | Both | Controls reading time and progress bar (Both / Reading Time / Progress Bar / None) |
 
 ### Post Footer
 
@@ -381,13 +382,20 @@ To disable, clear the text field.
 
 ---
 
-## Reading Progress Bar
+## Reading Indicators
 
-A thin 2px bar in the accent color appears fixed at the top of the viewport on post pages. It fills left-to-right as the reader scrolls through the post content, reaching 100% when the end of the article body is reached.
+Controls whether reading time and the reading progress bar are shown on post pages.
 
-It only activates on post pages; it does not appear on the homepage, tag pages, or author pages.
+| Option | Reading Time | Progress Bar |
+|--------|-------------|--------------|
+| **Both** (default) | ✓ | ✓ |
+| **Reading Time** | ✓ | — |
+| **Progress Bar** | — | ✓ |
+| **None** | — | — |
 
-**Setting**: Design > Show reading progress bar
+The reading time estimate (e.g. "3 min read") appears below the post metadata. The progress bar is a thin 2px accent-colored line fixed at the top of the viewport, filling as the reader scrolls through the post content. Both only activate on post pages.
+
+**Setting**: Design > Reading indicators
 
 ---
 
@@ -406,7 +414,8 @@ Each related post card shows the title, date, feature image, and optionally an e
 | Setting | Default | Controls |
 |---------|---------|----------|
 | Show related posts | On | Whether the section appears at all |
-| Show excerpt | On | Whether excerpts appear on related post cards |
+
+Related post cards always show an excerpt.
 
 ---
 

@@ -1,6 +1,5 @@
 {{!-- Related Posts Container - Populated by JavaScript --}}
-<div id="related-posts-container"
-    data-show-excerpt="{{#match @custom.related_posts_show_excerpt}}true{{else}}false{{/match}}"></div>
+<div id="related-posts-container"></div>
 
 {{!-- Related Posts Script --}}
 <script>
@@ -9,10 +8,7 @@
         const API_URL = '{{@site.url}}';
         const API_KEY = '{{content_api_key}}';
         const HEADING_TEXT = '{{t "Check more related posts"}}';
-
-        // Get settings from data attributes
-        const container = document.getElementById('related-posts-container');
-        const SHOW_EXCERPT = container.getAttribute('data-show-excerpt') === 'true';
+        const SHOW_EXCERPT = true;
 
         // Post data
         const postId = '{{id}}';
@@ -30,7 +26,7 @@
         const script = document.createElement('script');
         script.src = '{{asset "js/related-posts.js"}}';
         script.onload = function () {
-            loadRelatedPosts(postId, tags, API_URL, API_KEY, HEADING_TEXT, SHOW_EXCERPT);
+            loadRelatedPosts(postId, tags, API_URL, API_KEY, HEADING_TEXT, true);
         };
         document.body.appendChild(script);
     })();
