@@ -281,7 +281,7 @@ pre {
   left: 139px;
   /* Centered on marker column (date 120px + marker 40px/2 - line 2px/2) */
   width: 2px;
-  background: var(--timeline-line-color);
+  background: var(--accent-color);
 }
 
 .timeline-item {
@@ -443,7 +443,7 @@ pre {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--timeline-line-color);
+  background: var(--accent-color);
   margin-top: 0.35em;
 }
 
