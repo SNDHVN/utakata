@@ -55,6 +55,7 @@ All of these are in **Ghost Admin > Design**:
 | Navigation size | Extra Small – 2X Large |
 | Timeline density | Compact, Comfortable, Spacious |
 | Timeline icon position | Standard, Left, Right, None |
+| Timeline icon style | Default, Monochrome, Contrast, None |
 | Reading indicators | Both / Reading Time / Progress Bar / None |
 
 Post display toggles (author, date, tags, related posts, excerpts) and a Welcome Mat opt-in CTA are also available.

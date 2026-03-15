@@ -228,6 +228,7 @@ Controls the visual treatment of timeline icons.
 | **Default** | Full-color emoji as authored |
 | **Monochrome** | Grayscale filter at 70% opacity |
 | **Contrast** | Grayscale with high brightness at 90% opacity |
+| **None** | Icons hidden; replaced with a small dot marker |
 
 **Setting**: Design > Timeline icon style
 
