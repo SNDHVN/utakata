@@ -422,10 +422,11 @@ Related post cards always show an excerpt.
 
 ## Localization
 
-The theme ships with two languages:
+The theme ships with three languages:
 
 - **English** (`en.json`) — default
 - **Swedish** (`sv.json`)
+- **German** (`de.json`)
 
 The active language is determined by your Ghost site's language setting (`Settings > General > Publication language`). Set it to `sv` for Swedish.
 
