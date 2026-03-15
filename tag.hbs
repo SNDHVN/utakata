@@ -3,7 +3,11 @@
   <section class="tag-info center-text container">
 
     {{#if tag.feature_image}}
-    <img class="tag-info__image" src="{{tag.feature_image}}" alt="Image for {{tag.name}} tag" />
+    <img class="tag-info__image"
+      srcset="{{img_url tag.feature_image size="s"}} 300w, {{img_url tag.feature_image size="m"}} 600w, {{img_url tag.feature_image size="l"}} 1000w"
+      sizes="(min-width: 960px) 960px, 92vw"
+      src="{{img_url tag.feature_image size="l"}}"
+      alt="Image for {{tag.name}} tag" />
     {{/if}}
 
     <span class="tag-info__intro">{{t "Posts Tagged"}}:</span>

@@ -66,6 +66,10 @@
         ],
         "default": "Normal"
       },
+      "show_site_icon": {
+        "type": "boolean",
+        "default": true
+      },
       "icon_framing": {
         "type": "select",
         "options": [

@@ -3,6 +3,7 @@
   <div class="container">
     {{!-- Layout: Branding & Description --}}
     <div class="site-branding">
+      {{#match @custom.show_site_icon}}
       {{#if @site.icon}}
       <div class="site-icon-wrapper {{#match @custom.icon_framing " Squircle"}}is-squircle{{/match}}{{#match
         @custom.icon_framing "Rounded" }}is-rounded{{/match}}{{#match @custom.icon_framing "Sharp"
@@ -10,6 +11,7 @@
         <a href="{{@site.url}}"><img src="{{@site.icon}}" alt="{{@site.title}} icon" /></a>
       </div>
       {{/if}}
+      {{/match}}
       {{#is "home"}}
       <h1 class="site-title">{{@site.title}}</h1>
       {{else}}

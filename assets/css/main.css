@@ -234,6 +234,11 @@ h3 {
   margin-top: 1rem;
 }
 
+.post__reading-time {
+  display: block;
+  margin-top: 0.25rem;
+}
+
 /* Image rendering logic: grid overflow or container containment */
 .post__content img {
   border-radius: 4px;
@@ -584,12 +589,164 @@ hr {
 /* SECTION: Ghost Content Card Styles */
 /* ================================= */
 
-/* figure.kg-width-full { } */
-/* figure.kg-width-wide { } */
-/* .kg-gallery-card { } */
-/* .kg-gallery-container { } */
-/* .kg-gallery-row { } */
-/* .kg-gallery-image { } */
+/* --- Width breakout (required by Ghost theme validator) --- */
+.kg-width-wide {
+  position: relative;
+  width: 85vw;
+  max-width: 1600px;
+  margin-left: calc(50% - 42.5vw);
+}
+
+.kg-width-full {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+/* --- Gallery --- */
+.kg-gallery-image img {
+  border-radius: 4px;
+}
+
+/* --- Callout --- */
+.kg-callout-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-color);
+}
+
+.kg-callout-card-grey {
+  background-color: var(--card-bg);
+}
+
+.kg-callout-text {
+  color: var(--text-color);
+}
+
+/* --- Toggle --- */
+.kg-toggle-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-color);
+}
+
+.kg-toggle-heading-text {
+  color: var(--heading-color);
+}
+
+.kg-toggle-content {
+  color: var(--text-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.kg-toggle-icon svg {
+  stroke: var(--text-muted);
+}
+
+/* --- Audio --- */
+.kg-audio-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-color);
+}
+
+.kg-audio-title {
+  color: var(--heading-color);
+}
+
+.kg-audio-player {
+  background-color: var(--card-bg);
+}
+
+.kg-audio-playback-rate,
+.kg-audio-duration,
+.kg-audio-current-time {
+  color: var(--text-muted);
+}
+
+/* --- Video --- */
+.kg-video-card {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* --- Header card --- */
+/* Colors are set inline by Ghost Admin; only structural overrides needed */
+.kg-header-card {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.kg-header-card h2,
+.kg-header-card h3,
+.kg-header-card p {
+  color: inherit;
+}
+
+/* --- Signup card --- */
+.kg-signup-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-color);
+}
+
+.kg-signup-card h2,
+.kg-signup-card h3,
+.kg-signup-card-heading {
+  color: var(--heading-color);
+}
+
+.kg-signup-card-subheading,
+.kg-signup-card p {
+  color: var(--text-muted);
+}
+
+.kg-signup-card input[type="email"] {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 4px;
+}
+
+.kg-signup-card input[type="email"]::placeholder {
+  color: var(--text-muted);
+}
+
+.kg-signup-card-button {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border-radius: 4px;
+}
+
+/* --- Product card --- */
+.kg-product-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-color);
+}
+
+.kg-product-card-title {
+  color: var(--heading-color);
+}
+
+.kg-product-card-description {
+  color: var(--text-color);
+}
+
+.kg-product-card-rating-star svg {
+  fill: var(--accent-color);
+}
+
+.kg-product-card-button {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border-radius: 4px;
+}
 
 /* SECTION: Bookmark Card Styles */
 /* NOTE: Ghost's default bookmark card assets are excluded via package.json card_assets.exclude.
